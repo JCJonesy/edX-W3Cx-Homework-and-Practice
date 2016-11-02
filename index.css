@@ -13,10 +13,11 @@ body {
 #banner {
 	text-align: center;
 	background-color: bisque;
-	margin-top: 0;
+	margin: 0;
 	padding: 20px;
 	font-size: 2em;
 	box-shadow: 0 10px 10px -10px grey;
+	width: 100%;
 }
 
 #mainFoot {
@@ -26,10 +27,12 @@ body {
 	border-top:solid 1px;
 	background-color:bisque;
 	margin-top:20px;
+	width: 100%;
 }
 
 main {
-	padding: 10px;
+	margin-top: 20px;
+	padding: 20px;
 }
 
 .code {
@@ -90,14 +93,15 @@ nav ul {
 	color: white;
 	margin: 0;
 	padding: 0;
+	width: 100%;
 }
 
-nav li {
+nav li, .dropbtn {
 	display: inline-block;
 	font-size: 1.5em;
 }
 
-nav a, .dropbtn {
+nav a {
 	display: inline-block;
 	text-decoration: none;
 	padding: 17px;
@@ -137,13 +141,21 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 479px) {
+	#banner {
+		padding: 10px;
+		font-size: 1.5em;
+	}
+	main {
+		margin-top: 10px;
+		padding: 5px;
+	}
 	#column {
-    	-webkit-column-count: 2; /* Chrome, Safari, Opera */
-    	-moz-column-count: 2; /* Firefox */
-    	column-count: 2;
+    		-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    		-moz-column-count: 2; /* Firefox */
+    		column-count: 2;
 	}
 	th, td {
-    padding: 0;
+    		padding: 0;
 	}
 	.hideShow {
 		position: absolute;
