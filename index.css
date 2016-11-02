@@ -92,13 +92,11 @@ nav ul {
 	color: white;
 	margin: 0;
 	padding: 0;
-	width: 100%;
 }
 
 nav li {
 	display: inline-block;
 	font-size: 1.5em;
-	padding: 0;
 }
 
 nav a {
@@ -108,9 +106,7 @@ nav a {
 	text-align: center;
 }
 
-nav a:visited {
-	color:white;
-}
+
 
 nav a:hover {
 	background-color: grey;
