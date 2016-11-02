@@ -104,6 +104,10 @@ nav a, .dropbtn {
 	text-align: center;
 }
 
+nav a:visited {
+	color:white;
+}
+
 nav a:hover {
 	background-color: grey;
 }
