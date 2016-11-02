@@ -95,9 +95,10 @@ nav ul {
 	width: 100%;
 }
 
-nav li, .dropdown {
+nav li {
 	display: inline-block;
 	font-size: 1.5em;
+	padding: 0;
 }
 
 nav a, .dropbtn {
@@ -107,7 +108,7 @@ nav a, .dropbtn {
 	text-align: center;
 }
 
-nav a:visited, dropbtn:visited {
+nav a:visited, a.dropbtn:visited {
 	color:white;
 }
 
