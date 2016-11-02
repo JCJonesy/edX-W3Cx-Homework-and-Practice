@@ -101,14 +101,14 @@ nav li {
 	padding: 0;
 }
 
-nav a, .dropbtn {
+nav a {
 	display: inline-block;
 	text-decoration: none;
 	padding: 17px;
 	text-align: center;
 }
 
-nav a:visited, a.dropbtn:visited {
+nav a:visited {
 	color:white;
 }
 
