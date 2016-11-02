@@ -100,14 +100,14 @@ nav li, .dropbtn {
 	font-size: 1.5em;
 }
 
-nav a {
+nav a, .dropbtn {
 	display: inline-block;
 	text-decoration: none;
 	padding: 17px;
 	text-align: center;
 }
 
-nav a:visited {
+nav a:visited, dropbtn:visited {
 	color:white;
 }
 
@@ -132,14 +132,8 @@ nav a:hover {
 	background-color: grey;
 	color: white;
 }
-.show {
-	display: block;
-	position: absolute;
-	background-color: black;
-	min-width: 200px;
-}
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 499px) {
 	#banner {
 		padding: 10px;
 		font-size: 1.5em;
@@ -147,11 +141,6 @@ nav a:hover {
 	main {
 		margin-top: 10px;
 		padding: 5px;
-	}
-	#column {
-    		-webkit-column-count: 2; /* Chrome, Safari, Opera */
-    		-moz-column-count: 2; /* Firefox */
-    		column-count: 2;
 	}
 	th, td {
     		padding: 0;
@@ -168,15 +157,7 @@ nav a:hover {
 	}
 }
 
-@media only screen and (min-width: 480px) and (max-width: 540px) {
-	#column {
-    	-webkit-column-count: 3; /* Chrome, Safari, Opera */
-    	-moz-column-count: 3; /* Firefox */
-    	column-count: 3;
-	}
-}
-
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 500px) {
 	th, td {
     padding: 10px;
 	}
@@ -192,7 +173,15 @@ nav a:hover {
 	}
 }
 
-@media only screen and (min-width: 540px) and (max-width: 630px) {
+@media only screen and ( max-width: 510px) {
+	#column {
+    		-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    		-moz-column-count: 2; /* Firefox */
+    		column-count: 2;
+	}
+}
+
+@media only screen and (min-width: 510px) and (max-width: 630px) {
 	#column {
     	-webkit-column-count: 3; /* Chrome, Safari, Opera */
     	-moz-column-count: 3; /* Firefox */
