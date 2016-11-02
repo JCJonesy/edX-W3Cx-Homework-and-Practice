@@ -134,6 +134,13 @@ nav a:hover {
 	color: white;
 }
 
+.show {
+	display: block;
+	position: absolute;
+	background-color: black;
+	min-width: 200px;
+}
+
 @media only screen and (max-width: 499px) {
 	#banner {
 		padding: 10px;
