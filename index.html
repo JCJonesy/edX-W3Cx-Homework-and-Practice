@@ -13,13 +13,13 @@
 	<meta name="description" content="Reference material for beginner web designers." />
 	<meta name="author" content="Jonesy" />
 	<meta name="copyright" content="Clay Jones 2016" />
-	<meta name="date" content="2016-10-27T04:31:20-0500" />
+	<meta name="date" content="2016-11-03T06:04:17-0500" />
 	<meta name="generator" content="Bluefish 2.2.7" />
 </head>
 <body>
 	
 	<nav>
-		<h1 class="offscreen">Site Navigation</h1>
+		<h2 class="offscreen">Site Navigation</h2>
 		<ul>
 			<li class="dropdown">
 				<a href="javascript:void(0)" onclick="myFunction()">
@@ -42,9 +42,8 @@
 	</header>
 		
 	<main>
-		<mark><i>NOTE</i>: The copyright claims are for practice only! This work is open and free to use/edit/share.</mark>
 		<section>
-			<h2>The Tags!</h2>
+			<h2>Tags</h2>
 			<p><strong>&lt;!DOCTYPE&gt;</strong> is <b>not</b> a tag despite the brackets. This is a <abbr title="Document Type Definition">DTD</abbr>. <strong>&lt;!DOCTYPE html&gt;</strong> should be the first line of code when building a web page as it tells the web browser the following file is an HTML5 file - much easier than the previous, HTML4 <abbr title="Document Type Definition">DTD</abbr>: <span class="wrap">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</span> - where "strict" would be either strict, transitional, or frameset.</p>
 			<ol id="column">
 				<li>&lt;!-- --&gt;</li>
@@ -155,9 +154,222 @@
 			</ol>
 		</section>
 		<section>
+			<h2>Attributes</h2>
+				<p>Attributes offer additional information about an element. For example, consider a human being as an element. Humans can have countless attributes to further define them. They can have a specific name as with the <strong>id</strong> attribute. While humans can share the same name with others, element id's must be specific to only one element per file.</p> 
+				<p>Humans can also be classified in general terms like male or female as with the <strong>class</strong> attribute. HTML elements can belong to more than class; and, more than one element can be in the same class.</p>
+				<p><strong>All</strong> elements can have attributes. But, not all attributes can be used with all elements. Some attributes are specific to just one element. Others are used with particular types of elements.</p>
+				<p>Furthermore, grammar allows some descriptive attributes to be verbs - the <b>running</b> horse; the <b>cheering</b> fans. HTML offers <strong>Event Attributes</strong> in much the same way. Perhaps there is a better analogy! The grammatical version simply defines an object by it's observed event; but, the HTML event attribute is actually a user event (like clicking on an element object) that causes another event via javascript.</p>
+			<h3>Global attributes</h3>
+			<p>These are the 15 attributes that can be used on <strong>any</strong> element!</p>
+			<ol id="column">
+				<li>accesskey</li>
+				<li>class</li>
+				<li>contenteditable</li>
+				<li>contextmenu</li>
+				<li>data-*</li>
+				<li>dir</li>
+				<li>draggable</li>
+				<li>dropzone</li>
+				<li>hidden</li>
+				<li>id</li>
+				<li>lang</li>
+				<li>spellcheck</li>
+				<li>style</li>
+				<li>tabindex</li>
+				<li>title</li>
+			</ol>
+			<br />
+		</section>
+		<section class="flex-container">
+		<span class="flex-item">
+			<h3>&quot;Standard&quot; Attributes</h3>
+			<table id="table1">
+			<caption>
+			Attributes that are used with specific elements or groups of elements.
+			</caption>
+				<tr><th>Attribute</th><th>Applies to:</th></tr>
+				<tr><td>accept</td><td>&lt;input&gt;</td></tr>
+				<tr><td>accept-charset</td><td>&lt;form&gt;</td></tr>
+				<tr><td>action</td><td>&lt;form&gt;</td></tr>
+				<tr><td>alt</td><td>&lt;area&gt;, &lt;img&gt;, &lt;input&gt;</td></tr>
+				<tr><td>async</td><td>&lt;script&gt;</td></tr>
+				<tr><td>autocomplete</td><td>&lt;form&gt;, &lt;input&gt;</td></tr>
+				<tr><td>autofocus</td><td>&lt;button&gt;, &lt;input&gt;, &lt;keygen&gt;,
+				&lt;select&gt;, &lt;textarea&gt;</td></tr>
+				<tr><td>autoplay</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>challenge</td><td>&lt;keygen></td></tr>
+				<tr><td>charset</td><td>&lt;meta&gt;, &lt;script&gt;</td></tr>
+				<tr><td>checked</td><td>&lt;input&gt;</td></tr>
+				<tr><td>cite</td><td>&lt;blockquote&gt;, &lt;del&gt;, &lt;ins&gt;, &lt;q&gt;
+				</td></tr>
+				<tr><td>cols</td><td>&lt;textarea&gt;</td></tr>
+				<tr><td>colspan</td><td>&lt;td&gt;, &lt;th&gt;</td></tr>
+				<tr><td>content</td><td>&lt;meta&gt;</td></tr>
+				<tr><td>controls</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>coords</td><td>&lt;area&gt;</td></tr>
+				<tr><td>data</td><td>&lt;object&gt;</td></tr>
+				<tr><td>datetime</td><td>&lt;del&gt;, &lt;ins&gt;, &lt;time&gt;</td></tr>
+				<tr><td>default</td><td>&lt;track&gt;</td></tr>
+				<tr><td>defer</td><td>&lt;script&gt;</td></tr>
+				<tr><td>dirname</td><td>&lt;input&gt;, &lt;textarea&gt;</td></tr>
+				<tr><td>disabled</td><td>&lt;button&gt;, &lt;fieldset&gt;, &lt;input&gt;,
+				 &lt;keygen&gt;, &lt;optgroup&gt;, &lt;option&gt;, &lt;select&gt;,
+				 &lt;textarea&gt;</td></tr>
+				<tr><td>download</td><td>&lt;a&gt;, &lt;area&gt;</td></tr>
+				<tr><td>enctype</td><td>&lt;form&gt;</td></tr>
+				<tr><td>for</td><td>&lt;label&gt;, &lt;output&gt;</td></tr>
+				<tr><td>form</td><td>&lt;button&gt;, &lt;fieldset&gt;, &lt;input&gt;,
+				 &lt;keygen&gt;, &lt;label&gt;, &lt;meter&gt;, &lt;object&gt;, &lt;output&gt;,
+				  &lt;select&gt;, &lt;textarea&gt;</td></tr>
+				<tr><td>formaction</td><td>&lt;button&gt;, &lt;input&gt;</td></tr>
+				<tr><td>headers</td><td>&lt;td&gt;, &lt;th&gt;</td></tr>
+				<tr><td>height</td><td>&lt;canvas&gt;, &lt;embed&gt;, &lt;iframe&gt;,
+				 &lt;img&gt;, &lt;input&gt;, &lt;object&gt;, &lt;video&gt;</td></tr>
+				<tr><td>high</td><td>&lt;meter&gt;</td></tr>
+				<tr><td>href</td><td>&lt;a&gt;, &lt;area&gt;, &lt;base&gt;, &lt;link&gt;
+				</td></tr>
+				<tr><td>hreflang</td><td>&lt;a&gt;, &lt;area&gt;, &lt;link&gt;</td></tr>
+				<tr><td>http-equiv</td><td>&lt;meta&gt;</td></tr>
+				<tr><td>ismap</td><td>&lt;img&gt;</td></tr>
+				<tr><td>keytype</td><td>&lt;keygen&gt;</td></tr>
+				<tr><td>kind</td><td>&lt;track&gt;</td></tr>
+				<tr><td>label</td><td>&lt;track&gt;, &lt;option&gt;, &lt;optgroup&gt;</td></tr>
+				<tr><td>list</td><td>&lt;input&gt;</td></tr>
+				<tr><td>loop</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>low</td><td>&lt;meter&gt;</td></tr>
+				<tr><td>manifest</td><td>&lt;html&gt;</td></tr>
+				<tr><td>max</td><td>&lt;input&gt;, &lt;meter&gt;, &lt;progress&gt;</td></tr>
+				<tr><td>maxlength</td><td>&lt;input&gt;, &lt;textarea&gt;</td></tr>
+				<tr><td>media</td><td>&lt;a&gt;, &lt;area&gt;, &lt;link&gt;, &lt;source&gt;,
+				 &lt;style&gt;</td></tr>
+				<tr><td>method</td><td>&lt;form&gt;</td></tr>
+				<tr><td>min</td><td>&lt;input&gt;, &lt;meter&gt;</td></tr>
+				<tr><td>multiple</td><td>&lt;input&gt;, &lt;select&gt;</td></tr>
+				<tr><td>muted</td><td>&lt;video&gt;, &lt;audio&gt;</td></tr>
+				<tr><td>name</td><td>&lt;button&gt;, &lt;fieldset&gt;, &lt;form&gt;,
+				 &lt;iframe&gt;, &lt;input&gt;, &lt;keygen&gt;, &lt;map&gt;, &lt;meta&gt;,
+				  &lt;object&gt;, &lt;output&gt;, &lt;param&gt;, &lt;select&gt;,
+				   &lt;textarea&gt;</td></tr>
+				<tr><td>novalidate</td><td>&lt;form&gt;</td></tr>
+				<tr><td>open</td><td>&lt;details&gt;</td></tr>
+				<tr><td>optimum</td><td>&lt;meter&gt;</td></tr>
+				<tr><td>pattern</td><td>&lt;input&gt;</td></tr>
+				<tr><td>placeholder</td><td>&lt;input&gt;, &lt;textarea&gt;</td></tr>
+				<tr><td>poster</td><td>&lt;video&gt;</td></tr>
+				<tr><td>preload</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>readonly</td><td>&lt;input&gt;, &lt;textarea&gt;</td></tr>
+				<tr><td>rel</td><td>&lt;a&gt;, &lt;area&gt;, &lt;link&gt;</td></tr>
+				<tr><td>required</td><td>&lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;
+				</td></tr>
+				<tr><td>reversed</td><td>&lt;ol&gt;</td></tr>
+				<tr><td>rows</td><td>&lt;textarea&gt;</td></tr>
+				<tr><td>rowspan</td><td>&lt;td&gt;, &lt;th&gt;</td></tr>
+				<tr><td>sandbox</td><td>&lt;iframe&gt;</td></tr>
+				<tr><td>scope</td><td>&lt;th&gt;</td></tr>
+				<tr><td>scoped</td><td>&lt;style&gt;</td></tr>
+				<tr><td>selected</td><td>&lt;option&gt;</td></tr>
+				<tr><td>shape</td><td>&lt;area&gt;</td></tr>
+				<tr><td>size</td><td>&lt;input&gt;, &lt;select&gt;</td></tr>
+				<tr><td>sizes</td><td>&lt;link&gt;</td></tr>
+				<tr><td>span</td><td>&lt;col&gt;, &lt;colgroup&gt;</td></tr>
+				<tr><td>src</td><td>&lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;,
+				 &lt;input&gt;, &lt;script&gt;, &lt;source&gt;, &lt;track&gt;, &lt;video&gt;
+				 </td></tr>
+				<tr><td>srcdoc</td><td>&lt;iframe&gt;</td></tr>
+				<tr><td>srclang</td><td>&lt;track&gt;</td></tr>
+				<tr><td>start</td><td>&lt;ol&gt;</td></tr>
+				<tr><td>step</td><td>&lt;input&gt;</td></tr>
+				<tr><td>target</td><td>&lt;a&gt;, &lt;area&gt;, &lt;base&gt;, &lt;form&gt;
+				</td></tr>
+				<tr><td>type</td><td>&lt;button&gt;, &lt;embed&gt;, &lt;input&gt;, &lt;link&gt;,
+				 &lt;menu&gt;, &lt;object&gt;, &lt;script&gt;, &lt;source&gt;, &lt;style&gt;
+				 </td></tr>
+				<tr><td>usemap</td><td>&lt;img&gt;, &lt;object&gt;</td></tr>
+				<tr><td>value</td><td>&lt;button&gt;, &lt;input&gt;, &lt;li&gt;, &lt;option&gt;,
+				 &lt;meter&gt;, &lt;progress&gt;, &lt;param&gt;</td></tr>
+				<tr><td>width</td><td>&lt;canvas&gt;, &lt;embed&gt;, &lt;iframe&gt;,
+				 &lt;img&gt;, &lt;input&gt;, &lt;object&gt;, &lt;video&gt;</td></tr>
+				<tr><td>wrap</td><td>&lt;textarea&gt;</td></tr>
+			</table>
+		</span>
+		<span class="flex-item">
+			<h3>Event Attributes</h3>
+			<table id="table2">
+			<caption><a href="http://www.w3schools.com/tags/ref_eventattributes.asp">
+			W3Schools.com</a> classifies Event Attributes in the following categories:</caption>
+				<th colspan="2" class="tableDivider">Window Event Attributes</caption>
+				<tr><th>Attribute</th><th>Applies to:</th></tr>
+				<tr><td>onafterprint, onbeforeprint, onbeforeunload, onhashchange, onoffline,
+				 ononline, onpagehide, onpageshow, onpopstate, onresize, onstorage, onunload</td>
+					<td>&lt;body&gt;</td></tr>
+				<tr><td>onerror</td><td>&lt;audio&gt;, &lt;body&gt;, &lt;embed&gt;, &lt;img&gt;,
+				 &lt;object&gt;, &lt;script&gt;, &lt;style&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onload</td><td>&lt;body&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;input&gt;,
+				 &lt;link&gt;, &lt;script&gt;, &lt;style&gt;</td></tr>
+				<tr><td>onmessage 
+				<a href="http://www.w3schools.com/jsref/event_onmessage_sse.asp" target="blank">
+				reference</a></td><td>event source object</td></tr>
+			<th colspan="2" class="tableDivider">Form Events</th>
+				<tr><th>Attribute</th><th>Applies to:</th></tr>
+				<tr><td>onblur, onchange, oncontextmenu, onfocus, oninput, oninvalid, onselect
+				</td><td>All visible elements.</td></tr>
+				<tr><td>onreset, onsubmit</td><td>form</td></tr>
+				<tr><td>onsearch</td><td>input</td></tr>
+			<th colspan="2" class="tableDivider">Keyboard Events</th>
+				<tr><th>Attribute</th><th>Applies to:</th></tr>
+				<tr><td>onkeydown, onkeypress, onkeyup</td><td>All visible elements.</td></tr>
+			<th colspan="2" class="tableDivider">Mouse Events</th>
+				<tr><th>Attribute</th><th>Applies to:</th></tr>
+				<tr><td>onclick, ondblclick, ondrag, ondragend, ondragenter,
+				 ondragleave, ondragover, ondragstart, ondrop, onmousedown, onmousemove,
+				  onmouseout, onmouseover, onmouseup, onscroll, onwheel</td>
+					<td>All visible elements.</td></tr>
+			<th colspan="2" class="tableDivider">Clipboard Events</th>
+				<tr><th>Attribute</th><th>Applies to:</th></tr>
+				<tr><td>oncopy, oncut, npaste</td><td>All visible elements.</td></tr>
+			<th colspan="2" class="tableDivider">Media Events</th>
+				<tr><th>Attribute</th><th>Applies to:</th></tr>
+				<tr><td>onabort</td><td>&lt;audio&gt;, &lt;embed&gt;, &lt;img&gt;,
+				 &lt;object&gt;, &lt;video&gt;</td></tr>
+				<tr><td>oncanplay</td><td>&lt;audio&gt;, &lt;embed&gt;, &lt;object&gt;,
+				 &lt;video&gt;</td></tr>
+				<tr><td>oncanplaythrough</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>oncuechange</td><td>&lt;track&gt;</td></tr>
+				<tr><td>ondurationchange</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onemptied</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onended</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onerror</td><td>&lt;audio&gt;, &lt;body&gt;, &lt;embed&gt;,
+				 &lt;img&gt;, &lt;object&gt;, &lt;script&gt;, &lt;style&gt;, &lt;video&gt;
+				 </td></tr>
+				<tr><td>onloadeddata</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onloadedmetadata</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onloadstart</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onpause</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onplay</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onplaying</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onprogress</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onratechange</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onseeked</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onseeking</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onstalled</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onsuspend</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>ontimeupdate</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onvolumechange</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onwaiting</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+			<th colspan="2" class="tableDivider">Miscellaneous Events</th>
+				<tr><th>Attribute</th><th>Applies to:</th></tr>
+				<tr><td>onerror</td><td>&lt;audio&gt;, &lt;body&gt;, &lt;embed&gt;, &lt;img&gt;,
+				 &lt;object&gt;, &lt;script&gt;, &lt;style&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onshow</td><td>&lt;menu&gt;</td></tr>
+				<tr><td>ontoggle</td><td>&lt;details&gt;</td></tr>
+			</table>
+		</span>
+		</section>
+		<section>
+		<hr>
 			<h2>Special Characters</h2>	
-			<p>Character Entities are code for characters you wish to type rather than using the keyboard character directly. For example, suppose you want &lt;p&gt; to appear as text on your page. Typing that directly will result in creating a paragraph element rather than displaying it on the screen. For such a special case, use character entities - code that replaces the keyboard character. Therefore, <b>&amp;lt;p&ampgt;</b> in code would display <b>&lt;p&gt;</b> in a browser.<br />
-			Something to think about: To display <b>&amp;lt;p&ampgt;</b> on the screen, the code was: <b>&amp;amp;lt;p&amp;amp;gt;</b> .</p>
+			<p>Character References are code for characters you wish to type rather than using the keyboard character directly. For example, suppose you want &lt;p&gt; to appear as text on your page. Typing that directly will result in creating a paragraph element rather than displaying it on the screen. For such a special case, use character references - code that replaces the keyboard character. Therefore, <b>&amp;lt;p&ampgt;</b> in code would display <b>&lt;p&gt;</b> in a browser.<br />
+			<i>Something to think about</i>: To display <b>&amp;lt;p&ampgt;</b> on the screen, the code was: <b>&amp;amp;lt;p&amp;amp;gt;</b> .</p>
 			
 			<table>
 			<caption>There are 5 special characters that should always use entities:</caption>
@@ -284,4 +496,4 @@
 		
 		
 		
-		
+	
