@@ -106,7 +106,9 @@ nav a {
 	text-align: center;
 }
 
-
+nav a:visited {
+	color: white;
+}
 
 nav a:hover {
 	background-color: grey;
