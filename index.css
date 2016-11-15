@@ -106,7 +106,7 @@ nav a {
 	text-align: center;
 }
 
-nav a:visited {
+nav a:visited, nav i {
 	color: white;
 }
 
