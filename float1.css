@@ -1,0 +1,44 @@
+body {
+	background-color: black;
+	padding-bottom: 100px;
+}
+h1, h2 {
+	text-align: center;
+	color: white;
+}
+p {
+	color: white;
+	margin: 0;
+}
+section {
+	overflow: hidden;
+	border: 5px solid white;
+	margin: 5px;
+}
+#special {
+	border: 10px solid blue;
+	padding: 10px;
+}
+#justified {
+	padding: 20px;
+}
+article {
+	border: 5px solid white;
+	margin: 5px;
+}
+.red {background-color: red;}
+.blue {background-color: blue;}
+.yellow {background-color: yellow;}
+.white {background-color: white;}
+.orange {background-color: orange;}
+.purple {background-color: purple;}
+.thirty {width: 30%;}
+.forty {width: 40%;}
+.fifty {width: 50%;}
+.sixty {width: 60%;}
+.fLeft {float: left;}
+.fright {float: right;}
+.fcLeft {float: left; clear: left;}
+.fcright {float: right; clear: right;}
+.cleft {clear: left;}
+.cright {clear: right;}
