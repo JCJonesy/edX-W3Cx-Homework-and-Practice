@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="float1.css" type="text/css">
+    <title>Float Basics</title>
+  </head>
+  <body>
+    <section>
+	    <h2>Block level elements with background color and no content</h2>
+	    <div class="red">
+	      <p>This is text within a div with a red background color.<br />
+	      The remainder of the page just uses &lt;br&gt;&lt;br&gt; to allocate space for the background colors (except, obviously, when more notes are added).</p>
+	    </div>
+	    <div class="blue">
+	      <p><br /><br /></p>
+	    </div>
+	    <div class="yellow">
+	      <p><br /><br /></p>
+	    </div>
+	    <div class="white">
+	      <p><br /><br /></p>
+	    </div>
+	    <div class="orange">
+	      <p><br /><br /></p>
+	    </div>
+	    <div class="purple">
+	      <p><br /><br /></p>
+	    </div>
+    </section>
+    <section>
+	    <h2>Restricted width to 50% - they still stack top to botom</h2>
+	    <div class="red fifty">
+	      <br /><br />
+	    </div>
+	    <div class="blue fifty">
+	      <br /><br />
+	    </div>
+	    <div class="yellow fifty">
+	      <br /><br />
+	    </div>
+	    <div class="white fifty">
+	      <br /><br />
+	    </div>
+	    <div class="orange fifty">
+	      <br /><br />
+	    </div>
+	    <div class="purple fifty">
+	      <br /><br />
+	    </div>
+    </section>
+    <section>
+	    <h2>Until they are floated (left)</h2>
+	    <div class="red fifty fLeft">
+	      <br /><br />
+	    </div>
+	    <div class="blue fifty fLeft">
+	      <br /><br />
+	    </div>
+	    <div class="yellow fifty fLeft">
+	      <br /><br />
+	    </div>
+	    <div class="white fifty fLeft">
+	      <br /><br />
+	    </div>
+	    <div class="orange fifty fLeft">
+	      <br /><br />
+	    </div>
+	    <div class="purple fifty fLeft">
+	      <br /><br />
+	    </div>
+    </section>
+    <section>
+	    <h2>Or to the right</h2>
+	    <div class="red fifty fright">
+	      <br /><br />
+	    </div>
+	    <div class="blue fifty fright">
+	      <br /><br />
+	    </div>
+	    <div class="yellow fifty fright">
+	      <br /><br />
+	    </div>
+	    <div class="white fifty fright">
+	      <br /><br />
+	    </div>
+	    <div class="orange fifty fright">
+	      <br /><br />
+	    </div>
+	    <div class="purple fifty fright">
+	      <br /><br />
+	    </div>
+    </section>
+    <section>
+	    <h2>At 60% width</h2>
+	    <div class="red sixty fLeft">
+	      <p>They end up stacked again as there is not enough width to accommodate two per row.<br />floated left</p>
+	    </div>
+	    <div class="blue sixty fLeft">
+	      <br /><br />
+	    </div>
+	    <div class="yellow sixty fLeft">
+	      <br /><br />
+	    </div>
+	    <div class="white sixty fLeft">
+	      <br /><br />
+	    </div>
+	    <div class="orange sixty fLeft">
+	      <br /><br />
+	    </div>
+	    <div class="purple sixty fLeft">
+	      <br /><br />
+	    </div>
+    </section>
+    <section>
+	    <h2>At 40% width</h2>
+	    <div class="red forty fright">
+	      <p>Two per row are accommodated with 20% &quot;wasted&quot; space.<br />floated right</p>
+	    </div>
+	    <div class="blue forty fright">
+	      <br /><br />
+	    </div>
+	    <div class="yellow forty fright">
+	      <br /><br />
+	    </div>
+	    <div class="white forty fright">
+	      <br /><br />
+	    </div>
+	    <div class="orange forty fright">
+	      <br /><br />
+	    </div>
+	    <div class="purple forty fright">
+	      <br /><br />
+	    </div>
+    </section>
+	 <section>
+	    <h2>At 30% width</h2>
+	    <div class="red thirty fLeft">
+	      <p>There is now room for three per row.<br />10% &quot;wasted&quot; space.</p>
+	    </div>
+	    <div class="blue thirty fLeft">
+	      <br /><br />
+	    </div>
+	    <div class="yellow thirty fLeft">
+	      <br /><br />
+	    </div>
+	    <div class="white thirty fLeft">
+	      <br /><br />
+	    </div>
+	    <div class="orange thirty fLeft">
+	      <br /><br />
+	    </div>
+	    <div class="purple thirty fLeft">
+	      <br /><br />
+	    </div>
+    </section>
+    
+    <section>
+	    <h2>Unless they are cleared!</h2>
+	    <div class="red fifty fcLeft">
+	      <br /><br />
+	    </div>
+	    <div class="blue fifty fcLeft">
+	      <br /><br />
+	    </div>
+	    <div class="yellow fifty fLeft">
+	      This one is <strong>NOT CLEARED</strong><br /><br />
+	    </div>
+	    <div class="white fifty fcLeft">
+	      <br /><br />
+	    </div>
+	    <div class="orange fifty fcLeft">
+	      <br /><br />
+	    </div>
+	    <div class="purple fifty fcLeft">
+	      <br /><br />
+	    </div>
+    </section>
+    <section>
+	    <h2>Same for the right (30%)</h2>
+	    <div class="red thirty fright">
+	      This one is <strong>NOT CLEARED</strong><br /><br />
+	    </div>
+	    <div class="blue thirty fcright">
+	      <br /><br />
+	    </div>
+	    <div class="yellow thirty fright">
+	      Nor is this one<br /><br />
+	    </div>
+	    <div class="white thirty fright">
+	      Or this one<br /><br />
+	    </div>
+	    <div class="orange thirty fcright">
+	      <br /><br />
+	    </div>
+	    <div class="purple thirty fcright">
+	      <br /><br />
+	    </div>
+    </section>
+
+    <section>
+    	<h2>Let's play!</h2>
+    	<div class="red sixty fright">
+	      Blue's height is now 3 lines because it's content requires it.<br />
+	      This is <strong>NOT</strong> due to any floats/clears
+	    </div>
+	    <div class="blue sixty">
+	      Both red and blue are 60% width. Red is still first in code, and floated right. Blue is neither floated nor cleared. As you can see, the red block floats over a portion of the blue block.<br />
+	    </div>
+	    <div class="yellow fifty fLeft">
+	      White is neither floated nor cleared.<br />
+	      It is hidden under yellow.
+	    </div>
+	    <div class="white fifty">
+	      <br /><br />But, white is now 3 lines in height. (altered html code)
+	    </div>
+	    <div class="orange fifty fLeft">
+	      left float<br /><br />
+	    </div>
+	    <div class="purple fifty fLeft">
+	      left float<br /><br />
+	    </div>
+	    <div class="red sixty fright">
+	      <br /><br />
+	    </div>
+	    <div class="blue sixty cright">
+	      Same red and blue as above; <strong>But</strong>, blue is now cleared right<br /><br />
+	    </div>
+	    <div class="yellow fifty fLeft">
+	      <br /><br />
+	    </div>
+	    <div class="white fifty fLeft">
+	      Black background is still &quot;wasted space&quot;<br /><br />
+	    </div>
+	    <div class="orange fifty fLeft">
+	      left float<br /><br />
+	    </div>
+	    <div class="purple fifty fright">
+	      right float<br />
+	      Same result as previous
+	    </div>
+	    <div class="red sixty fright">
+	      <br /><br />
+	    </div>
+	    <div class="blue sixty cleft">
+	      This is what happens if you clear blue to left<br />
+	      NOTHING! It's still partially under red
+	    </div>
+	    <div class="yellow forty fLeft">
+	      Yellow (30%) floats left<br />
+	      Orange is hidden behind me - until I end
+	    </div>
+	    <div class="white fifty fright">
+	      White (50%) floats right - no clear<br />
+	      Neither orange or purple are floated or cleared.
+	    </div>
+	    <div class="orange fifty">
+	      <br /><br />
+	    </div>
+	    <div class="purple fifty">
+	      My top touches Orange's bottom even though it's hidden. <br /><br />
+	    </div>
+    </section>
+
+    <section id="special">
+    	<article>
+	    <h2>Sidenote:</h2>
+	    <p id="justified">overflow: hidden was used to keep the white border around the colored divs. Otherwise, the white border wraps this text only - the floated divs are not acknowledged. They will, in fact, float on top of the bottom border (and anything else following in html code that is not cleared or floated) like so:</p>
+	    <div class="red fifty fright">
+	      <br /><br />
+	    </div>
+	    <div class="blue fifty fright">
+	      <br /><br />
+	    </div>
+	    <div class="yellow fifty fright">
+	      <br /><br />
+	    </div>
+	    <div class="white fifty fright">
+	      <br /><br />
+	    </div>
+	    <div class="orange fifty fright">
+	      <br /><br />
+	    </div>
+	    <div class="purple fifty fright">
+	      <br /><br />
+	    </div>
+	   </article>
+	   <article>
+	    <h2>See what I mean?</h2>
+	    <p id="justified">Inline elements have their own float rules. This header and text continued wrapping to the next line until it was free from the floats to be displayed. Look closely at the white border along the sides and see where the previous section ended (under the floating divs) and another began (still under the floating divs from the previous section). There is another section below this one with just &lt;br&gt;&lt;br&gt; to allocate visual space with a border. (You can only see the sides as top and bottom are 'under' the floating divs.)</p>
+	    <div class="red fifty fright">
+	      <br /><br />
+	    </div>
+	    <div class="blue fifty fright">
+	      <br /><br />
+	    </div>
+	    <div class="yellow fifty fright">
+	      <br /><br />
+	    </div>
+	    <div class="white fifty fright">
+	      <br /><br />
+	    </div>
+	    <div class="orange fifty fright">
+	      <br /><br />
+	    </div>
+	    <div class="purple fifty fright">
+	      <br /><br />
+	    </div>
+	   </article>
+	   <article>
+	   	<br /><br />
+	   </article>
+    </section>
+  </body>
+</html>
