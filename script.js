@@ -15,3 +15,7 @@ window.onclick = function(event) {
     }
   }
 }
+
+function close_window() {
+  close();
+  }
