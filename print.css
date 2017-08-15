@@ -1,0 +1,44 @@
+html, body {
+	font-size: 12px;
+	background-color: white;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+nav, #tagLink, #attrLink, #valid, #outline, #template, aside, .hide, .ralign {
+	position: absolute;
+	clip: rect(1px 1px 1px 1px); /* for Internet Explorer */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+#tags, #attributes, #specialCharacters, #banner, #mainFoot {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3 {
+	font-size: 1em;
+}
+
+.inline {
+	display: inline;
+}
+
+.column {
+	margin-left: 25px;
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+ 	-moz-column-count: 3; /* Firefox */
+ 	column-count: 3;	
+}
+
+th, td {
+	padding: 1px;
+	border-bottom: 1px solid black;
+}
