@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" media="print" href="print.css" />
+	<script type="text/javascript" src="script.js"></script>
+	<title>HTML5 Attributes</title>
+	<meta name="keywords" content="HTML, CSS, Javascript, web development, WWW," />
+	<meta name="description" content="Reference material for beginner web builders." />
+	<meta name="author" content="Jonesy" />
+	<meta name="copyright" content="Clay Jones 2016" />
+	<meta name="date" content="2017-01-31T18:23:42-0600" />
+	<meta name="generator" content="Bluefish 2.2.7" />
+</head>
+<body>
+	<header id="banner">
+		<a class="ralign" href="javascript:close_window();">close window</a>
+		<h1>HTML5 Attributes</h1>
+	</header>
+	<main>
+		<section>	
+			<h3>Global attributes</h3>
+			<ol class="column">
+				<li>accesskey</li>
+				<li>class</li>
+				<li>contenteditable</li>
+				<li>contextmenu</li>
+				<li>data-*</li>
+				<li>dir</li>
+				<li>draggable</li>
+				<li>dropzone</li>
+				<li>hidden</li>
+				<li>id</li>
+				<li>lang</li>
+				<li>spellcheck</li>
+				<li>style</li>
+				<li>tabindex</li>
+				<li>title</li>
+			</ol>
+			<br />
+		</section>
+		<section>
+			<h3>Event Attributes</h3>
+			<table id="table2">
+			<caption><a href="http://www.w3schools.com/tags/ref_eventattributes.asp">
+			W3Schools.com</a> classifies Event Attributes in the following categories:</caption>
+			<thead>
+				<tr><th colspan="2" class="tableDivider">Window Event Attributes</th></tr>
+			</thead>
+			<tbody>
+				<tr class="bisque"><td>Attribute</td><td>Applies to:</td></tr>
+				<tr><td>onafterprint, onbeforeprint, onbeforeunload, onhashchange, onoffline,
+				 ononline, onpagehide, onpageshow, onpopstate, onresize, onstorage, onunload</td>
+					<td>&lt;body&gt;</td></tr>
+				<tr><td>onerror</td><td>&lt;audio&gt;, &lt;body&gt;, &lt;embed&gt;, &lt;img&gt;,
+				 &lt;object&gt;, &lt;script&gt;, &lt;style&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onload</td><td>&lt;body&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;input&gt;,
+				 &lt;link&gt;, &lt;script&gt;, &lt;style&gt;</td></tr>
+				<tr><td>onmessage 
+				<a href="http://www.w3schools.com/jsref/event_onmessage_sse.asp" target="blank">
+				**reference**</a></td><td>event source object</td></tr>
+				
+				<tr><td colspan="2" class="tableDivider">Form Events</td></tr>
+				<tr><td>onblur, onchange, oncontextmenu, onfocus, oninput, oninvalid, onselect
+				</td><td>All visible elements.</td></tr>
+				<tr><td>onreset, onsubmit</td><td>form</td></tr>
+				<tr><td>onsearch</td><td>input</td></tr>
+				
+				<tr><td colspan="2" class="tableDivider">Keyboard Events</td></tr>
+				<tr><td>onkeydown, onkeypress, onkeyup</td><td>All visible elements.</td></tr>
+				
+				<tr><td colspan="2" class="tableDivider">Mouse Events</td></tr>
+				<tr><td>onclick, ondblclick, ondrag, ondragend, ondragenter,
+				 ondragleave, ondragover, ondragstart, ondrop, onmousedown, onmousemove,
+				  onmouseout, onmouseover, onmouseup, onscroll, onwheel</td>
+					<td>All visible elements.</td></tr>
+					
+				<tr><td colspan="2" class="tableDivider">Clipboard Events</td></tr>
+				<tr><td>oncopy, oncut, onpaste</td><td>All visible elements.</td></tr>
+				
+				<tr><td colspan="2" class="tableDivider">Media Events</td></tr>
+				<tr><td>onabort</td><td>&lt;audio&gt;, &lt;embed&gt;, &lt;img&gt;,
+				 &lt;object&gt;, &lt;video&gt;</td></tr>
+				<tr><td>oncanplay</td><td>&lt;audio&gt;, &lt;embed&gt;, &lt;object&gt;,
+				 &lt;video&gt;</td></tr>
+				<tr><td>oncuechange</td><td>&lt;track&gt;</td></tr>
+				<tr><td>onerror</td><td>&lt;audio&gt;, &lt;body&gt;, &lt;embed&gt;,
+				 &lt;img&gt;, &lt;object&gt;, &lt;script&gt;, &lt;style&gt;, &lt;video&gt;
+				 </td></tr>
+				<tr><td>oncanplaythrough, ondurationchange, onemptied, onended, onloadeddata,
+					onloadedmetadata,
+				 	onloadstart, onpause, onplay, onplaying, onprogress, onratechange,
+				  	onseeked, onseeking, onstalled, onsuspend, ontimeupdate, onvolumechange,
+				   onwaiting</td><td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				   
+				<tr><td colspan="2" class="tableDivider">Miscellaneous Events</td></tr>
+				<tr><td>onerror</td><td>&lt;audio&gt;, &lt;body&gt;, &lt;embed&gt;, &lt;img&gt;,
+				 &lt;object&gt;, &lt;script&gt;, &lt;style&gt;, &lt;video&gt;</td></tr>
+				<tr><td>onshow</td><td>&lt;menu&gt;</td></tr>
+				<tr><td>ontoggle</td><td>&lt;details&gt;</td></tr>
+			</tbody>
+			</table>
+		</section>
+		<section>
+			<h3>&quot;Standard&quot; Attributes</h3>
+			<table id="table1">
+			<caption>
+				Attributes that are used with specific elements or groups of elements.
+			</caption>
+			<thead><tr><th>Attribute</th><th>Applies to:</th></tr></thead>
+			<tbody>
+				<tr><td>accept, checked, list, pattern, step</td><td>&lt;input&gt;</td></tr>
+				<tr><td>accept-charset, action, enctype, method, novalidate</td>
+					<td>&lt;form&gt;</td></tr>
+				<tr><td>alt</td><td>&lt;area&gt;, &lt;img&gt;, &lt;input&gt;</td></tr>
+				<tr><td>async, defer</td><td>&lt;script&gt;</td></tr>
+				<tr><td>autocomplete</td><td>&lt;form&gt;, &lt;input&gt;</td></tr>
+				<tr><td>autofocus</td><td>&lt;button&gt;, &lt;input&gt;, &lt;keygen&gt;,
+					&lt;select&gt;, &lt;textarea&gt;</td></tr>
+				<tr><td>autoplay, controls, loop, muted, preload</td>
+					<td>&lt;audio&gt;, &lt;video&gt;</td></tr>
+				<tr><td>challenge, keytype</td><td>&lt;keygen></td></tr>
+				<tr><td>charset</td><td>&lt;meta&gt;, &lt;script&gt;</td></tr>
+				<tr><td>cite</td>
+					<td>&lt;blockquote&gt;, &lt;del&gt;, &lt;ins&gt;, &lt;q&gt;</td></tr>
+				<tr><td>cols, rows, wrap</td><td>&lt;textarea&gt;</td></tr>
+				<tr><td>colspan, headers, rowspan</td><td>&lt;td&gt;, &lt;th&gt;</td></tr>
+				<tr><td>content, http-equiv</td><td>&lt;meta&gt;</td></tr>
+				<tr><td>coords. shape</td><td>&lt;area&gt;</td></tr>
+				<tr><td>data</td><td>&lt;object&gt;</td></tr>
+				<tr><td>datetime</td><td>&lt;del&gt;, &lt;ins&gt;, &lt;time&gt;</td></tr>
+				<tr><td>default, kind, srclang</td><td>&lt;track&gt;</td></tr>
+				<tr><td>dirname, maxlength, placeholder, readonly</td>
+					<td>&lt;input&gt;, &lt;textarea&gt;</td></tr>
+				<tr><td>disabled</td><td>&lt;button&gt;, &lt;fieldset&gt;, &lt;input&gt;,
+				 &lt;keygen&gt;, &lt;optgroup&gt;, &lt;option&gt;, &lt;select&gt;,
+				 	&lt;textarea&gt;</td></tr>
+				<tr><td>download</td><td>&lt;a&gt;, &lt;area&gt;</td></tr>
+				<tr><td>for</td><td>&lt;label&gt;, &lt;output&gt;</td></tr>
+				<tr><td>form</td><td>&lt;button&gt;, &lt;fieldset&gt;, &lt;input&gt;,
+				 	&lt;keygen&gt;, &lt;label&gt;, &lt;meter&gt;, &lt;object&gt;, &lt;output&gt;,
+				  	&lt;select&gt;, &lt;textarea&gt;</td></tr>
+				<tr><td>formaction</td><td>&lt;button&gt;, &lt;input&gt;</td></tr>
+				<tr><td>height, width</td><td>&lt;canvas&gt;, &lt;embed&gt;, &lt;iframe&gt;,
+				 	&lt;img&gt;, &lt;input&gt;, &lt;object&gt;, &lt;video&gt;</td></tr>
+				<tr><td>high, low, optimum</td><td>&lt;meter&gt;</td></tr>
+				<tr><td>href</td><td>&lt;a&gt;, &lt;area&gt;, &lt;base&gt;, &lt;link&gt;
+				</td></tr>
+				<tr><td>hreflang, rel</td><td>&lt;a&gt;, &lt;area&gt;, &lt;link&gt;</td></tr>
+				<tr><td>ismap</td><td>&lt;img&gt;</td></tr>
+				<tr><td>label</td><td>&lt;track&gt;, &lt;option&gt;, &lt;optgroup&gt;</td></tr>
+				<tr><td>manifest</td><td>&lt;html&gt;</td></tr>
+				<tr><td>max</td><td>&lt;input&gt;, &lt;meter&gt;, &lt;progress&gt;</td></tr>
+				<tr><td>media</td><td>&lt;a&gt;, &lt;area&gt;, &lt;link&gt;, &lt;source&gt;,
+				 	&lt;style&gt;</td></tr>
+				<tr><td>min</td><td>&lt;input&gt;, &lt;meter&gt;</td></tr>
+				<tr><td>multiple, size</td><td>&lt;input&gt;, &lt;select&gt;</td></tr>
+				<tr><td>name</td><td>&lt;button&gt;, &lt;fieldset&gt;, &lt;form&gt;, 
+					&lt;iframe&gt;, &lt;input&gt;, &lt;keygen&gt;, &lt;map&gt;, &lt;meta&gt;,
+				  	&lt;object&gt;, &lt;output&gt;, &lt;param&gt;, &lt;select&gt;,
+				   &lt;textarea&gt;</td></tr>
+				<tr><td>open</td><td>&lt;details&gt;</td></tr>
+				<tr><td>poster</td><td>&lt;video&gt;</td></tr>
+				<tr><td>required</td><td>&lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;</td></tr>
+				<tr><td>reversed, start</td><td>&lt;ol&gt;</td></tr>
+				<tr><td>sandbox, srcdoc</td><td>&lt;iframe&gt;</td></tr>
+				<tr><td>scope</td><td>&lt;th&gt;</td></tr>
+				<tr><td>scoped</td><td>&lt;style&gt;</td></tr>
+				<tr><td>selected</td><td>&lt;option&gt;</td></tr>=
+				<tr><td>sizes</td><td>&lt;link&gt;</td></tr>
+				<tr><td>span</td><td>&lt;col&gt;, &lt;colgroup&gt;</td></tr>
+				<tr><td>src</td><td>&lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;,
+				 	&lt;input&gt;, &lt;script&gt;, &lt;source&gt;, &lt;track&gt;, &lt;video&gt;
+				</td></tr>
+				<tr><td>target</td><td>&lt;a&gt;, &lt;area&gt;, &lt;base&gt;, &lt;form&gt;
+				</td></tr>
+				<tr><td>type</td><td>&lt;button&gt;, &lt;embed&gt;, &lt;input&gt;, &lt;link&gt;,
+				 	&lt;menu&gt;, &lt;object&gt;, &lt;script&gt;, &lt;source&gt;, &lt;style&gt;
+				</td></tr>
+				<tr><td>usemap</td><td>&lt;img&gt;, &lt;object&gt;</td></tr>
+				<tr><td>value</td><td>&lt;button&gt;, &lt;input&gt;, &lt;li&gt;, &lt;option&gt;,
+				 	&lt;meter&gt;, &lt;progress&gt;, &lt;param&gt;</td></tr>
+			</tbody>
+			</table>
+		</section>
+	</main>
+	<footer id="mainFoot">
+		<section id="valid">
+			<h3>Validation:</h3>
+			<p><a href="http://jigsaw.w3.org/css-validator/check/referer">
+        	<img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" /></a></p>
+		</section>
+		<section id="copy">
+			<h3>©2016 Clay Jones</h3>
+			<p class="inline">With Special Thanks To:</p>
+			<p class="inline"><a href="http://www.w3schools.com/" target="blank">w3schools</a></p>
+			<p class="inline"><a href="https://www.edx.org/" target="blank">edX</a></p>
+		</section>
+		<section id="outline">
+			<h3><a href="javascript:(function(){var i=function(a){this.sections=[];this.startingNode=a};i.prototype={heading:false,append:function(a){a.container=this;this.sections.push(a)},asHTML:function(a){var b=u(this.heading);if(a)b='&lt;a href=&quot;#'+v(this.startingNode)+'&quot;&gt;'+b+&quot;&lt;/a&gt;&quot;;return b+q(this.sections,a)}};var q=function(a,b){for(var f=&quot;&quot;,c=0;c&lt;a.length;c++)f+=&quot;&lt;li&gt;&quot;+a[c].asHTML(b)+&quot;&lt;/li&gt;&quot;;return f==&quot;&quot;?f:&quot;&lt;ol&gt;&quot;+f+&quot;&lt;/ol&gt;&quot;},r=function(a){a=a.heading;return h(a)?j(a):1},u=function(a){if(h(a)){if(k(a)==&quot;HGROUP&quot;)a=a.getElementsByTagName(&quot;h&quot;+
+				-j(a))[0];return a.textContent||a.innerText||&quot;&lt;i&gt;No text content inside &quot;+a.nodeName+&quot;&lt;/i&gt;&quot;}return&quot;&quot;+a},v=function(a){var b=a.getAttribute(&quot;id&quot;);if(b)return b;do b=&quot;h5o-&quot;+ ++s;while(t.getElementById(b));a.setAttribute(&quot;id&quot;,b);return b},e,d,g,s,t,w=function(a,b,f){var c=a;a:for(;c;){b(c);if(c.firstChild){c=c.firstChild;continue a}for(;c;){f(c);if(c.nextSibling){c=c.nextSibling;continue a}c=c==a?null:c.parentNode}}},x=function(a){if(!h(o(g)))if(l(a)||m(a)){e!=null&amp;&amp;g.push(e);e=a;d=new i(a);e.outline=
+				{sections:[d],startingNode:a,asHTML:function(c){return q(this.sections,c)}}}else if(e!=null)if(h(a)){if(d.heading)if(j(a)&gt;=r(n(e.outline))){var b=new i(a);e.outline.sections.push(b);d=b;d.heading=a}else{b=false;var f=d;do{if(j(a)&lt;r(f)){b=new i(a);f.append(b);d=b;d.heading=a;b=true}f=f.container}while(!b)}else d.heading=a;g.push(a)}},y=function(a){var b=o(g);if(h(b))b==a&amp;&amp;g.pop();else{if((l(a)||m(a))&amp;&amp;!d.heading)d.heading=&quot;&lt;i&gt;Untitled &quot;+k(a)+&quot;&lt;/i&gt;&quot;;if(l(a)&amp;&amp;g.length&gt;0){e=g.pop();d=n(e.outline);for(b=
+				0;b&lt;a.outline.sections.length;b++)d.append(a.outline.sections[b])}else if(m(a)&amp;&amp;g.length&gt;0){e=g.pop();for(d=n(e.outline);d.sections.length&gt;0;)d=n(d)}else if(l(a)||m(a))d=e.outline.sections[0]}},k=function(a){return a.tagName.toUpperCase()},p=function(a){return function(b){return z(b)&amp;&amp;(new RegExp(a,&quot;i&quot;)).test(k(b))}},m=p(&quot;^BLOCKQUOTE|BODY|DETAILS|FIELDSET|FIGURE|TD$&quot;),l=p(&quot;^ARTICLE|ASIDE|NAV|SECTION$&quot;),h=p(&quot;^H[1-6]|HGROUP$&quot;),z=function(a){return a&amp;&amp;a.tagName},j=function(a){var b=k(a);if(b==&quot;HGROUP&quot;)for(b=
+				1;b&lt;=6;b++){if(a.getElementsByTagName(&quot;H&quot;+b).length&gt;0)return-b}else return-parseInt(b.substr(1))},n=function(a){return o(a.sections)},o=function(a){return a[a.length-1]};HTML5Outline=function(a){s=0;t=a.ownerDocument||window.document;d=e=null;g=[];w(a,x,y);return e!=null?e.outline:null}})();
+				;(function(){var b=function(e,f){for(var d=0;d&lt;e.length;d++)e[d].setAttribute(&quot;style&quot;,f)},g=HTML5Outline(document.body).asHTML(true),a=document.createElement(&quot;div&quot;);b([a],&quot;position:fixed;top:10px;right:10px;border:2px solid #000;background:rgba(255,255,255,.9);padding:15px;z-index:999;max-height:400px;overflow:auto;font-size:11px;font-family:Verdana, sans-serif;&quot;);a.innerHTML=g;b(a.getElementsByTagName(&quot;li&quot;),&quot;list-style:decimal outside;margin-left:20px;font-size:11px;font-family:Verdana, sans-serif;&quot;);
+				b(a.getElementsByTagName(&quot;ol&quot;),&quot;margin: 0;padding:0;font-size:11px;font-family:Verdana, sans-serif;&quot;);b(a.getElementsByTagName(&quot;a&quot;),&quot;color:#008;text-decoration:underline;font-size:11px;font-family:Verdana, sans-serif;&quot;);var c=a.insertBefore(document.createElement(&quot;a&quot;),a.firstChild);b([c],&quot;float: right; margin: 0 0 5px 5px; padding: 5px; border: 1px #008 solid;color:#00f;background-color:#ccf;&quot;);c.innerHTML=&quot;Close&quot;;c.href=&quot;#&quot;;c.onclick=function(){document.body.removeChild(a);a=c=null};document.body.appendChild(a)})();
+				;" title="TableDeMatiere">Site Outline</a></h3>
+		</section>
+	</footer>
+</body>
+</html>
