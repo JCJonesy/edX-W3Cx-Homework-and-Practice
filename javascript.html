@@ -4,14 +4,14 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" type="text/css" href="index.css" />
-	<script type="text/javascript" src="index.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="script.js"></script>
 	<title>Learning Javascript</title>
 	<meta name="keywords" content="HTML, CSS, Javascript, W3.CSS, WWW, web development," />
 	<meta name="description" content="Reference material for beginner web designers." />
 	<meta name="author" content="Jonesy" />
 	<meta name="copyright" content="Clay Jones 2016" />
-	<meta name="date" content="2016-10-27T04:21:08-0500" />
+	<meta name="date" content="2016-11-23T03:49:53-0600" />
 	<meta name="generator" content="Bluefish 2.2.7" />
 </head>
 <body>
@@ -36,16 +36,38 @@
 	<header id="banner">
 		<h1>Javascript</h1>
 	</header>
+
+	<main id="mainContent" class="mainFormat">
+		<section>
+		<header>
+			<h2>So.....</h2>
+			<p>I don't even know where to start yet!</p>
+		</header>
+		</section>
+	</main>
+
 	<aside>
-		<h2 class="center">Tools</h2>
+		<h2 id="tools" class="center">Tools</h2>
+			<h3>Google</h3>
+				<a href="https://developers.google.com/speed/libraries/" target="blank">
+					Hosted Libraries</a><br />
+				<a href="https://developers.google.com/web/" target="blank">
+					Web Developers</a>
 			<h3>W3C</h3>
-			<a href="http://www.w3schools.com/howto/default.asp" target="blank">
-				How To ...</a><br />
-			<a href="https://www.w3.org/2009/cheatsheet/" target="blank">
-				W3C Cheat Sheet</a>
+				<a href="http://www.w3schools.com/howto/default.asp" target="blank">
+					How To ...</a><br />
+				<a href="https://www.w3.org/2009/cheatsheet/" target="blank">
+					W3C Cheat Sheet</a><br />
+				<a href="https://www.w3.org/TR/WCAG20-TECHS/H42.html" target="blank">
+					H42: Using h1-h6 to identify headings</a><br />
+				<a href="SESample.html" target="blank">Semantic Elements Sample</a>
+			<h3>Mozilla:</h3>
+				<a href="https://developer.mozilla.org/en-US/docs/Web" target="blank">
+					Web technology For developers</a>
 			<h3>Accessibility:</h3>
 				<a href="https://www.w3.org/WAI/" target="blank">
 					Web Accessibility Initiative</a><br />
+				<a href="https://www.w3.org/WAI/ER/tools/" target="blank">WAI Tools</a><br />
 				<a href="https://www.w3.org/WAI/demos/bad/Overview.html" target="blank">
 					Before/After Demos</a><br />
 				<a href="https://www.w3.org/WAI/tutorials/" target="blank">
@@ -53,7 +75,8 @@
 			<h3><abbr title="Internationalization">i18n:</abbr></h3>
 				<a href="https://www.w3.org/International/" target="blank">
 					W3C Internationalization Activity</a>
-			<h3>Responsiveness:</h3>
+			<h3>Browser Support:</h3>
+				<a href="http://caniuse.com/" target="blank">Can I Use...</a>
 			<h3>Validators:</h3>
 				<a href="http://validator.w3.org/" target="blank">Markup</a><br />
 				<a href="https://jigsaw.w3.org/css-validator/" target="blank">CSS</a><br />
@@ -65,32 +88,42 @@
 					Internationalization</a><br />
 				<a href="https://validator.w3.org/feed/" target="blank">RSS Feed</a><br />
 				<a href="https://www.w3.org/RDF/Validator/" target="blank">RDF</a>
-			<h3>Style Guides</h3>
+			<h3>Style Guides:</h3>
 				<a href="https://google.github.io/styleguide/htmlcssguide.xml" target="blank">
 					Google</a><br />
 				<a href="https://contribute.jquery.org/style-guide/html/" target="blank">
-					jQuery</a>
+					jQuery</a><br />
+					<a href="https://www.w3.org/International/questions/qa-b-and-i-tags" 
+					target="blank">Semantics vs Style</a>
+			<h3>Images:</h3>
+				<a href="http://1stwebdesigner.com/image-file-types/" target="blank">
+					Image File Types</a>
 	</aside>
+
 	<footer id="mainFoot">
-		<p>&copy;2016 Clay Jones<br />
-		With Special Thanks To:<br />
-		<a href="http://www.w3schools.com/" target="blank">w3schools</a><br />
-		<a href="https://www.edx.org/" target="blank">edX</a>
-		</p>
-		<a href="javascript:(function(){var i=function(a){this.sections=[];this.startingNode=a};i.prototype={heading:false,append:function(a){a.container=this;this.sections.push(a)},asHTML:function(a){var b=u(this.heading);if(a)b='&lt;a href=&quot;#'+v(this.startingNode)+'&quot;&gt;'+b+&quot;&lt;/a&gt;&quot;;return b+q(this.sections,a)}};var q=function(a,b){for(var f=&quot;&quot;,c=0;c&lt;a.length;c++)f+=&quot;&lt;li&gt;&quot;+a[c].asHTML(b)+&quot;&lt;/li&gt;&quot;;return f==&quot;&quot;?f:&quot;&lt;ol&gt;&quot;+f+&quot;&lt;/ol&gt;&quot;},r=function(a){a=a.heading;return h(a)?j(a):1},u=function(a){if(h(a)){if(k(a)==&quot;HGROUP&quot;)a=a.getElementsByTagName(&quot;h&quot;+
+		<section id="valid">
+			<h3>Validation:</h3>
+			<p><a href="http://jigsaw.w3.org/css-validator/check/referer">
+        	<img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" /></a></p>
+		</section>
+		<section id="copy">
+			<h3>©2016 Clay Jones</h3>
+			<p class="inline">With Special Thanks To:</p>
+			<p class="inline"><a href="http://www.w3schools.com/" target="blank">w3schools</a></p>
+			<p class="inline"><a href="https://www.edx.org/" target="blank">edX</a></p>
+		</section>
+		<section id="outline">
+			<h3><a href="javascript:(function(){var i=function(a){this.sections=[];this.startingNode=a};i.prototype={heading:false,append:function(a){a.container=this;this.sections.push(a)},asHTML:function(a){var b=u(this.heading);if(a)b='&lt;a href=&quot;#'+v(this.startingNode)+'&quot;&gt;'+b+&quot;&lt;/a&gt;&quot;;return b+q(this.sections,a)}};var q=function(a,b){for(var f=&quot;&quot;,c=0;c&lt;a.length;c++)f+=&quot;&lt;li&gt;&quot;+a[c].asHTML(b)+&quot;&lt;/li&gt;&quot;;return f==&quot;&quot;?f:&quot;&lt;ol&gt;&quot;+f+&quot;&lt;/ol&gt;&quot;},r=function(a){a=a.heading;return h(a)?j(a):1},u=function(a){if(h(a)){if(k(a)==&quot;HGROUP&quot;)a=a.getElementsByTagName(&quot;h&quot;+
 				-j(a))[0];return a.textContent||a.innerText||&quot;&lt;i&gt;No text content inside &quot;+a.nodeName+&quot;&lt;/i&gt;&quot;}return&quot;&quot;+a},v=function(a){var b=a.getAttribute(&quot;id&quot;);if(b)return b;do b=&quot;h5o-&quot;+ ++s;while(t.getElementById(b));a.setAttribute(&quot;id&quot;,b);return b},e,d,g,s,t,w=function(a,b,f){var c=a;a:for(;c;){b(c);if(c.firstChild){c=c.firstChild;continue a}for(;c;){f(c);if(c.nextSibling){c=c.nextSibling;continue a}c=c==a?null:c.parentNode}}},x=function(a){if(!h(o(g)))if(l(a)||m(a)){e!=null&amp;&amp;g.push(e);e=a;d=new i(a);e.outline=
 				{sections:[d],startingNode:a,asHTML:function(c){return q(this.sections,c)}}}else if(e!=null)if(h(a)){if(d.heading)if(j(a)&gt;=r(n(e.outline))){var b=new i(a);e.outline.sections.push(b);d=b;d.heading=a}else{b=false;var f=d;do{if(j(a)&lt;r(f)){b=new i(a);f.append(b);d=b;d.heading=a;b=true}f=f.container}while(!b)}else d.heading=a;g.push(a)}},y=function(a){var b=o(g);if(h(b))b==a&amp;&amp;g.pop();else{if((l(a)||m(a))&amp;&amp;!d.heading)d.heading=&quot;&lt;i&gt;Untitled &quot;+k(a)+&quot;&lt;/i&gt;&quot;;if(l(a)&amp;&amp;g.length&gt;0){e=g.pop();d=n(e.outline);for(b=
 				0;b&lt;a.outline.sections.length;b++)d.append(a.outline.sections[b])}else if(m(a)&amp;&amp;g.length&gt;0){e=g.pop();for(d=n(e.outline);d.sections.length&gt;0;)d=n(d)}else if(l(a)||m(a))d=e.outline.sections[0]}},k=function(a){return a.tagName.toUpperCase()},p=function(a){return function(b){return z(b)&amp;&amp;(new RegExp(a,&quot;i&quot;)).test(k(b))}},m=p(&quot;^BLOCKQUOTE|BODY|DETAILS|FIELDSET|FIGURE|TD$&quot;),l=p(&quot;^ARTICLE|ASIDE|NAV|SECTION$&quot;),h=p(&quot;^H[1-6]|HGROUP$&quot;),z=function(a){return a&amp;&amp;a.tagName},j=function(a){var b=k(a);if(b==&quot;HGROUP&quot;)for(b=
 				1;b&lt;=6;b++){if(a.getElementsByTagName(&quot;H&quot;+b).length&gt;0)return-b}else return-parseInt(b.substr(1))},n=function(a){return o(a.sections)},o=function(a){return a[a.length-1]};HTML5Outline=function(a){s=0;t=a.ownerDocument||window.document;d=e=null;g=[];w(a,x,y);return e!=null?e.outline:null}})();
 				;(function(){var b=function(e,f){for(var d=0;d&lt;e.length;d++)e[d].setAttribute(&quot;style&quot;,f)},g=HTML5Outline(document.body).asHTML(true),a=document.createElement(&quot;div&quot;);b([a],&quot;position:fixed;top:10px;right:10px;border:2px solid #000;background:rgba(255,255,255,.9);padding:15px;z-index:999;max-height:400px;overflow:auto;font-size:11px;font-family:Verdana, sans-serif;&quot;);a.innerHTML=g;b(a.getElementsByTagName(&quot;li&quot;),&quot;list-style:decimal outside;margin-left:20px;font-size:11px;font-family:Verdana, sans-serif;&quot;);
 				b(a.getElementsByTagName(&quot;ol&quot;),&quot;margin: 0;padding:0;font-size:11px;font-family:Verdana, sans-serif;&quot;);b(a.getElementsByTagName(&quot;a&quot;),&quot;color:#008;text-decoration:underline;font-size:11px;font-family:Verdana, sans-serif;&quot;);var c=a.insertBefore(document.createElement(&quot;a&quot;),a.firstChild);b([c],&quot;float: right; margin: 0 0 5px 5px; padding: 5px; border: 1px #008 solid;color:#00f;background-color:#ccf;&quot;);c.innerHTML=&quot;Close&quot;;c.href=&quot;#&quot;;c.onclick=function(){document.body.removeChild(a);a=c=null};document.body.appendChild(a)})();
-				;" title="TableDeMatiere">Site Outline</a>
+				;" title="TableDeMatiere">Site Outline</a></h3>
+		</section>
 	</footer>
 </body>
-</html>		
-		
-		
-		
-		
-		
-		
+</html>
